@@ -82,6 +82,7 @@ input:checked + .slider:before {
 
 /* ////////////////////////////////////////////////////////////////// */
 /* Nav Container */
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -99,9 +100,8 @@ ul li {
 
 .nav-items li:hover {
   cursor: pointer;
-  color: #ac3a0d;
-  transform: scale(1.1);
   transition: 0.5s;
+  color: #ac3a0d;
 }
 
 span {
@@ -136,6 +136,14 @@ em {
 
 .right img {
   max-width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* Menu Container */
+.menu-container {
+  height: 100vh;
+  width: 100%;
+  background-color: ;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
