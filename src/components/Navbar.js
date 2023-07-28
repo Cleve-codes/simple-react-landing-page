@@ -30,10 +30,10 @@ const Navbar = () => {
           <input
             type="text"
             name="text"
-            class="input"
+            className="input"
             placeholder="search..."
           ></input>
-          <span class="icon">
+          <span className="icon">
             <svg
               width="19px"
               height="19px"

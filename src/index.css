@@ -15,6 +15,8 @@ code {
     monospace;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
+/* App Component */
 .App {
   height: 100vh;
   width: 100%;
@@ -22,6 +24,64 @@ code {
   color: #000000;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
+/* Dark and Light mode toggle switch */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.25em;
+  height: 2em;
+  margin-top: 0.5em;
+  margin-left: 0.45em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #000;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ffd93d;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #ffd93d;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* Nav Container */
 nav {
   display: flex;
   justify-content: space-around;
@@ -78,6 +138,8 @@ em {
   max-width: 100%;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
+/* Input Elements */
 /* Search Input */
 .input-container {
   width: 220px;
@@ -114,6 +176,7 @@ em {
   animation: anim 1s linear infinite;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
 /* Susbcribe input */
 .find-food {
   margin-top: 10%;
@@ -168,7 +231,9 @@ em {
   }
 }
 
-/* Media query for screen sized below 800px */
+/* ////////////////////////////////////////////////////////////////// */
+/* Media Queries */
+/* Media query for screens sized below 800px */
 @media screen and (max-width: 880px) {
   .nav-items {
     display: none;
@@ -182,6 +247,7 @@ em {
   }
 }
 
+/* Media query for screens sized below 1300px */
 @media screen and (max-width: 1300px) {
   .main-container {
     display: block;
@@ -190,4 +256,11 @@ em {
   .right {
     margin-top: 5%;
   }
+}
+
+
+/* Dark Mode */
+.dark-mode{
+  background-color: #000;
+  color: #fff;
 }

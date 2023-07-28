@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Main from "./Main";
+import Toggle from "./Toggle";
 
-const Home = () => {
+const Home = ({ handleModes, darkMode }) => {
   return (
-    <div className="container">
+    <div className={`container ${darkMode ? "dark-mode": ""}`}>
+      <Toggle handleModes={handleModes} darkMode={darkMode} />
       <Navbar />
       <Main />
     </div>

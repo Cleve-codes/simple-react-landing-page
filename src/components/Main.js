@@ -14,17 +14,17 @@ const Main = () => {
             <em> Indulge in Culinary Bliss:</em> <br></br>
             Where Every Dish is a Masterpiece of Flavors and Culinary Creativity
           </p>
-          <div class="input-group">
+          <div className="input-group">
             <input
               type="text"
-              class="input-submit"
+              className="input-submit"
               id="Email"
               name="Email"
               placeholder="pizza"
               autocomplete="off"
             ></input>
             <input
-              class="button--submit"
+              className="button--submit"
               value="Find Food"
               type="submit"
             ></input>
