@@ -5,7 +5,7 @@ import Toggle from "./Toggle";
 
 const Home = ({ handleModes, darkMode }) => {
   return (
-    <div className={`container ${darkMode ? "dark-mode": ""}`}>
+    <div>
       <Toggle handleModes={handleModes} darkMode={darkMode} />
       <Navbar />
       <Main />

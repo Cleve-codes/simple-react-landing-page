@@ -101,7 +101,7 @@ ul li {
   cursor: pointer;
   color: #ac3a0d;
   transform: scale(1.1);
-  transition: 0.75s;
+  transition: 0.5s;
 }
 
 span {
@@ -258,9 +258,8 @@ em {
   }
 }
 
-
 /* Dark Mode */
-.dark-mode{
+.dark-mode {
   background-color: #000;
   color: #fff;
 }

@@ -1,6 +1,7 @@
 import "./index.css";
-import Home from "./components/Home";
 import { useState } from "react";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -10,10 +11,9 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="App">
-        <Home handleModes={handleModes} darkMode={darkMode} />
-      </div>
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+      <Home handleModes={handleModes} darkMode={darkMode} />
+      <Menu />
     </div>
   );
 }
