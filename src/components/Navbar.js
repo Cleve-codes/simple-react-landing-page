@@ -7,7 +7,7 @@ const Navbar = () => {
         <li>
           <h2>
             {" "}
-            Let's <span>Eat🥗</span>{" "}
+            Let's <span>Eat🍔</span>{" "}
           </h2>
         </li>
       </ul>
@@ -22,7 +22,7 @@ const Navbar = () => {
           <h2>Services</h2>
         </li>
         <li>
-          <h2>Order</h2>
+          <h2>Order 🛒</h2>
         </li>
       </ul>
       <ul>

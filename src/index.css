@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Monoton&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400&display=swap");
 
 body {
   margin: 0;
@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f1e9;
 }
 
 code {
@@ -23,12 +24,13 @@ code {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 2%;
 }
 
 ul {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 
 ul li {
@@ -38,10 +40,42 @@ ul li {
 .nav-items li:hover {
   cursor: pointer;
   color: #ac3a0d;
+  transform: scale(1.1);
+  transition: 0.75s;
 }
 
 span {
   color: #b8621b;
+}
+
+em {
+  font-family: "Lugrasimo";
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.left {
+  min-width: 50%;
+}
+
+.left .h1 {
+  font-family: "Monoton";
+  color: #b8621b;
+  font-size: 60px;
+}
+
+.right img {
+  max-width: 100%;
 }
 
 /* Search Input */
@@ -81,6 +115,10 @@ span {
 }
 
 /* Susbcribe input */
+.find-food {
+  margin-top: 10%;
+}
+
 .input-group {
   display: flex;
   align-items: center;
@@ -130,25 +168,8 @@ span {
   }
 }
 
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-}
-
-.left {
-  min-width: 50%;
-}
-
-.left h1 {
-  font-family: "Monoton";
-  color: #b8621b;
-  font-size: 50px;
-}
-
 /* Media query for screen sized below 800px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .nav-items {
     display: none;
   }
@@ -164,9 +185,9 @@ span {
 @media screen and (max-width: 1300px) {
   .main-container {
     display: block;
-    margin-left: 20%;
+    margin-left: 15%;
   }
-  .right{
+  .right {
     margin-top: 5%;
   }
 }

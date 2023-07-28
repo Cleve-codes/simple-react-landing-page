@@ -5,16 +5,15 @@ const Main = () => {
     <div className="main-container">
       <div className="left">
         <div>
-          <h1>
+          <p className="h1">
             Downtown <br></br> Delicacy
-          </h1>
-          <p>
-            <span>
-              Indulge in Culinary Bliss: Where Flavor Meets Imagination!
-            </span>
           </p>
         </div>
-        <div>
+        <div className="find-food">
+          <p>
+            <em> Indulge in Culinary Bliss:</em> <br></br>
+            Where Every Dish is a Masterpiece of Flavors and Culinary Creativity
+          </p>
           <div class="input-group">
             <input
               type="text"
