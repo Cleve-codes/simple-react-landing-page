@@ -24,6 +24,13 @@ code {
   color: #000000;
 }
 
+.bg-vid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 /* ////////////////////////////////////////////////////////////////// */
 /* Dark and Light mode toggle switch */
 /* The switch - the box around the slider */
