@@ -2,6 +2,7 @@ import "./index.css";
 import { useState } from "react";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
+import videoBg from "./Assets/bgVid.mp4";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,6 +13,8 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+      <div className="overlay"></div>
+      <video src={videoBg} autoPlay loop muted />
       <Home handleModes={handleModes} darkMode={darkMode} />
       <Menu />
     </div>
