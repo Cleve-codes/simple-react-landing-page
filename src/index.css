@@ -169,7 +169,7 @@ a:hover {
 /* Media query for screens sized below 1300px */
 @media screen and (max-width: 1300px) {
   .main-container {
-    display: block;
-    margin-left: 15%;
+    display: flex;
+    align-items: center;
   }
 }
