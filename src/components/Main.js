@@ -3,36 +3,13 @@ import React from "react";
 const Main = () => {
   return (
     <div className="main-container">
-      <div className="left">
-        <div>
-          <p className="h1">
-            Downtown <br></br> Delicacy
-          </p>
-        </div>
-        <div className="find-food">
-          <p>
-            <em> Indulge in Culinary Bliss:</em> <br></br>
-            Where Every Dish is a Masterpiece of Flavors and Culinary Creativity
-          </p>
-          <div className="input-group">
-            <input
-              type="text"
-              className="input-submit"
-              id="Email"
-              name="Email"
-              placeholder="pizza"
-              autocomplete="off"
-            ></input>
-            <input
-              className="button--submit"
-              value="Find Food"
-              type="submit"
-            ></input>
-          </div>
-        </div>
-      </div>
-      <div className="right">
-        <img src="./Assets/image-2.png" alt="" />
+      <div>
+        <h1>
+          Explore <br></br>The Best<br></br> Food in Town
+        </h1>
+        <p>
+          Click here to view our menus<a href="#menu"> &rarr;</a>{" "}
+        </p>
       </div>
     </div>
   );

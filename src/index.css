@@ -21,7 +21,7 @@ code {
   height: 100vh;
   width: 100%;
   background-color: #f6f1e9;
-  color: #000000;
+  color: #fff;
 }
 
 video {
@@ -41,65 +41,9 @@ video {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-color: #000000cc;
+  background-color: #312f2fcc;
   top: 0;
   left: 0;
-}
-
-/* ////////////////////////////////////////////////////////////////// */
-/* Dark and Light mode toggle switch */
-/* The switch - the box around the slider */
-.switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.25em;
-  height: 2em;
-  margin-top: 0.5em;
-  margin-left: 0.45em;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  --background: #000;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--background);
-  transition: 0.5s;
-  border-radius: 30px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #ffd93d;
-  background: var(--background);
-  transition: 0.5s;
-}
-
-input:checked + .slider {
-  background-color: #fff;
-}
-
-input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #ffd93d;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
@@ -108,7 +52,6 @@ input:checked + .slider:before {
 nav {
   display: flex;
   justify-content: space-around;
-  margin-top: 2%;
 }
 
 ul {
@@ -141,23 +84,24 @@ em {
 /* Main Container */
 .main-container {
   display: flex;
-  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 5%;
   align-items: center;
-  margin-top: 5%;
 }
 
-.left {
-  min-width: 50%;
-}
-
-.left .h1 {
-  font-family: "Monoton";
-  color: #b8621b;
+.main-container h1 {
   font-size: 60px;
+  /* font-family: 'Monoton'; */
 }
 
-.right img {
-  max-width: 100%;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
@@ -207,61 +151,6 @@ em {
 }
 
 /* ////////////////////////////////////////////////////////////////// */
-/* Susbcribe input */
-.find-food {
-  margin-top: 10%;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-}
-
-.input-submit {
-  min-height: 50px;
-  max-width: 150px;
-  padding: 0 1rem;
-  color: #fff;
-  font-size: 15px;
-  border: 1px solid #5e4dcd;
-  border-radius: 6px 0 0 6px;
-  background-color: transparent;
-}
-
-.button--submit {
-  min-height: 50px;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 0 6px 6px 0;
-  background-color: #5e4dcd;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.button--submit:hover {
-  background-color: #5e5dcd;
-}
-
-.input-submit:focus,
-.input-submit:focus-visible {
-  border-color: #3898ec;
-  outline: none;
-}
-
-@keyframes anim {
-  0%,
-  100% {
-    transform: translateY(calc(-50% - 5px)) scale(1);
-  }
-
-  50% {
-    transform: translateY(calc(-50% - 5px)) scale(1.1);
-  }
-}
-
-/* ////////////////////////////////////////////////////////////////// */
 /* Media Queries */
 /* Media query for screens sized below 800px */
 @media screen and (max-width: 880px) {
@@ -283,13 +172,4 @@ em {
     display: block;
     margin-left: 15%;
   }
-  .right {
-    margin-top: 5%;
-  }
-}
-
-/* Dark Mode */
-.dark-mode {
-  background-color: #000;
-  color: #fff;
 }
