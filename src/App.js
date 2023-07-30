@@ -12,9 +12,6 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>
-      <video autoPlay loop muted playsInline>
-        <source src="/Assets/bgVid.mp4" type="video/mp4"></source>
-      </video>
       <Home handleModes={handleModes} darkMode={darkMode} />
       <Menu />
     </div>
