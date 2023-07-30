@@ -5,10 +5,7 @@ const Navbar = () => {
     <nav>
       <ul className="logo">
         <li>
-          <h2>
-            {" "}
-            Let's <span>Eat🍔</span>{" "}
-          </h2>
+          <img src=".git /Assets/logo.png" alt="Our logo" />
         </li>
       </ul>
       <ul className="nav-items">
