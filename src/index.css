@@ -5,10 +5,9 @@
   padding: 0;
 }
 
-body,
-html {
+body {
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
@@ -93,17 +92,16 @@ em {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  height: 65vh;
+  height: 80vh;
   width: 100%;
   align-items: center;
   background-color: #000000cc;
   margin-top: 1em;
 }
 
-.ham-content li{
+.ham-content li {
   margin-top: 5%;
 }
-
 
 .ham-content li:hover {
   cursor: pointer;
@@ -136,9 +134,10 @@ a:hover {
 /* ////////////////////////////////////////////////////////////////// */
 /* Menu Container */
 .menu-container {
+  display: block;
   height: 100vh;
   width: 100%;
-  background-color: #f8cba6;
+  color: black;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
