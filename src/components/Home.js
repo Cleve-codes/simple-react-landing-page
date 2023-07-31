@@ -1,13 +1,22 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Main from "./Main";
+
 
 
 const Home = () => {
   return (
-    <div className="home">   
+    <div className="home">
       <Navbar />
-      <Main />
+      <div className="main-container">
+        <div>
+          <h1>
+            Explore <br></br>The Best<br></br> Food in Town
+          </h1>
+          <p>
+            Click here to view our menus<a href="#menu"> &rarr;</a>{" "}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

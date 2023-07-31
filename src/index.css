@@ -139,8 +139,9 @@ a:hover {
 
 .input:focus {
   outline: none;
-  border: 0.5px solid black;
-  box-shadow: -5px -5px 0px black;
+  border: 0.5px solid #b8621b;
+  outline: none;
+  box-shadow: -5px -5px 0px #b8621b;
 }
 
 .input-container:hover > .icon {
