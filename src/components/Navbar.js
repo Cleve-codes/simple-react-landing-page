@@ -1,4 +1,6 @@
 import React from "react";
+import Cross from "../Assets/cross.svg";
+import HamburgerMenu from "../Assets/hamburger-menu.svg";
 
 const Navbar = () => {
   return (
@@ -83,6 +85,11 @@ const Navbar = () => {
               </g>
             </svg>
           </span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src={HamburgerMenu} alt="cross" className="hamburger-menu" />
         </li>
       </ul>
     </nav>
