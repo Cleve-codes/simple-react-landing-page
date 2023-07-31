@@ -2,7 +2,7 @@ import React from "react";
 import Cross from "../Assets/cross.svg";
 import HamburgerMenu from "../Assets/hamburger-menu.svg";
 
-const Navbar = () => {
+const Navbar = ({ hamburger, handleMenu }) => {
   return (
     <nav>
       <ul className="logo">
@@ -89,7 +89,12 @@ const Navbar = () => {
       </ul>
       <ul>
         <li>
-          <img src={HamburgerMenu} alt="cross" className="hamburger-menu" />
+          <img
+            src={hamburger ? HamburgerMenu : Cross}
+            alt="cross"
+            className="hamburger-menu"
+            onClick={handleMenu}
+          />
         </li>
       </ul>
     </nav>

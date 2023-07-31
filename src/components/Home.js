@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 
 const Home = () => {
+  const [hamburger, setHamburgerMenu] = useState(true);
+
+  const handleMenu = () => {
+    setHamburgerMenu((prev) => !prev);
+  };
+
   return (
     <div className="home">
-      <Navbar />
-      <div className="ham-content">
+      <Navbar hamburger={hamburger} handleMenu={handleMenu} />
+      <div className={`ham-content ${hamburger ? "hidden" : ""}`}>
         <ul>
           <li>
             <h2>Home</h2>

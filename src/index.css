@@ -84,23 +84,26 @@ em {
   display: none;
 }
 
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
 .ham-content ul {
   position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  display: none;
-  height: 100vh;
+  height: 65vh;
   width: 100%;
-  justify-content: center;
   align-items: center;
   background-color: #000000cc;
+  margin-top: 1em;
 }
 
 .ham-content li{
-  margin-left: 45%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
+
 
 .ham-content li:hover {
   cursor: pointer;
@@ -194,9 +197,6 @@ a:hover {
   .hamburger-menu {
     display: block;
   }
-  .ham-content ul {
-    display: block;
-  }
 }
 
 /* Media query for screens sized below 1300px */
@@ -205,4 +205,8 @@ a:hover {
     display: flex;
     align-items: center;
   }
+}
+
+.hidden {
+  display: none;
 }
