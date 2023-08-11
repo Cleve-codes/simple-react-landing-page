@@ -16,14 +16,17 @@ const AboutUs = () => (
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et.
+          Indulge in a culinary journey where flavors dance on your palate. Our
+          skilled chefs blend global inspirations with local ingredients,
+          crafting dishes that are both artful and delectable. Join us for a
+          dining experience that transforms every meal into a cherished memory.
+          Welcome to a world of taste and delight.
         </p>
         <button type="button" className="custom__button">
           Know More
         </button>
       </div>
+
       <div className="app__aboutus-content_knife flex__center">
         <img src={images.knife} alt="about_knife" />
       </div>
@@ -32,9 +35,12 @@ const AboutUs = () => (
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-          odio nec aliquet.
+          Embark on a journey through time as we trace our culinary legacy. From
+          humble beginnings to a cherished destination for food enthusiasts, our
+          history is woven with passion, innovation, and a commitment to
+          delighting your senses. Explore the chapters that have shaped us into
+          what we are today, and join us in celebrating the art of gastronomy
+          that stands the test of time.
         </p>
         <button type="button" className="custom__button">
           Know More
