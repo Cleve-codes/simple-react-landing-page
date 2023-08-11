@@ -1,4 +1,5 @@
 import React from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
 
 import {
   AboutUs,
@@ -13,30 +14,27 @@ import {
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
-import { useState, useEffect, useRef } from "react";
 
 const App = () => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef(null);
+  const [headerRef, isHeaderIntersecting] = useIntersectionObserver({
+    rootMargin: "-300px",
+  });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
-      { rootMargin: "-300px" }
-    );
-    console.log(isIntersecting);
-    observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, [isIntersecting]);
+  const [AboutusRef, isAboutusIntersecting] = useIntersectionObserver({
+    rootMargin: "-300px",
+  });
 
   return (
     <div>
       <Navbar />
-      <Header isIntersecting={isIntersecting} />
-      <AboutUs />
+      <Header
+        headerRef={headerRef}
+        isHeaderIntersecting={isHeaderIntersecting}
+      />
+      <AboutUs
+        AboutusRef={AboutusRef}
+        isAboutusIntersecting={isAboutusIntersecting}
+      />
       <SpecialMenu />
       <Chef />
       <Intro />
