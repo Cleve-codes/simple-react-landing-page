@@ -1,4 +1,5 @@
 import React from "react";
+import "typescript";
 import useIntersectionObserver from "./useIntersectionObserver";
 
 import {
@@ -14,6 +15,7 @@ import {
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
+import { Reveal } from "./Reveal";
 
 const App = () => {
   const [headerRef, isHeaderIntersecting] = useIntersectionObserver({
@@ -27,14 +29,20 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Header
-        headerRef={headerRef}
-        isHeaderIntersecting={isHeaderIntersecting}
-      />
+      <Reveal>
+        <Header
+          headerRef={headerRef}
+          isHeaderIntersecting={isHeaderIntersecting}
+        />
+      </Reveal>
+
+      <Reveal>
+
       <AboutUs
         AboutusRef={AboutusRef}
         isAboutusIntersecting={isAboutusIntersecting}
-      />
+        />
+        </Reveal>
       <SpecialMenu />
       <Chef />
       <Intro />
