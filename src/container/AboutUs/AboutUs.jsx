@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../../constants";
 import "./AboutUs.css";
+import 'animate.css'
 
 const AboutUs = () => (
   <div
@@ -12,7 +13,7 @@ const AboutUs = () => (
     </div> */}
 
     <div className="app__aboutus-content flex__center">
-      <div className="app__aboutus-content_about">
+      <div className="app__aboutus-content_about animate__animated animate__fadeInLeft">
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
@@ -31,7 +32,7 @@ const AboutUs = () => (
         <img src={images.knife} alt="about_knife" />
       </div>
 
-      <div className="app__aboutus-content_history">
+      <div className="app__aboutus-content_history animate__animated animate__fadeInRight">
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
