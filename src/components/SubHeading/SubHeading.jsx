@@ -1,8 +1,10 @@
 import React from 'react';
+import { images } from "../../constants"
 
 const SubHeading = () => (
   <div>
-    SubHeading
+    <p className='p__cormorant'>TITLE</p>
+    <img src={images.spoon} alt="spoon" />
   </div>
 );
 
