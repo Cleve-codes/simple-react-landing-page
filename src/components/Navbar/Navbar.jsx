@@ -10,9 +10,8 @@ const Navbar = () => {
 
   const handleSmallScreen = () => {
     setToggleMenu((prev) => {
-      return !prev
+      return !prev;
     });
-    
   };
 
   return (
