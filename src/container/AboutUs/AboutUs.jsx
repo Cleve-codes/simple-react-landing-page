@@ -35,12 +35,11 @@ const AboutUs = () => (
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
-          Embark on a journey through time as we trace our culinary legacy. From
-          humble beginnings to a cherished destination for food enthusiasts, our
-          history is woven with passion, innovation, and a commitment to
-          delighting your senses. Explore the chapters that have shaped us into
-          what we are today, and join us in celebrating the art of gastronomy
-          that stands the test of time.
+          From humble beginnings to a cherished destination for food
+          enthusiasts, our history is woven with passion, innovation, and a
+          commitment to delighting your senses. Explore the chapters that have
+          shaped us into what we are today, and join us in celebrating the art
+          of gastronomy that stands the test of time.
         </p>
         <button type="button" className="custom__button">
           Know More
