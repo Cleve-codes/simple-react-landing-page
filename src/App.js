@@ -1,5 +1,5 @@
 import React from "react";
-import "typescript";
+
 
 import {
   AboutUs,
