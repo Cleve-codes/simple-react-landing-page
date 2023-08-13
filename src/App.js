@@ -15,7 +15,6 @@ import { Navbar } from "./components";
 import "./App.css";
 import BackToTopBtnTo from "./components/BackToTop/BackToTopBtn";
 import { useState, useEffect } from "react";
-import { GiWindSlap } from "react-icons/gi";
 
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
