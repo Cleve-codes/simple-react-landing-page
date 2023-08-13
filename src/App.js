@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import {
   AboutUs,
   Chef,
@@ -15,8 +14,24 @@ import {
 import { Navbar } from "./components";
 import "./App.css";
 import BackToTopBtnTo from "./components/BackToTop/BackToTopBtn";
+import { useState, useEffect } from "react";
+import { GiWindSlap } from "react-icons/gi";
 
 const App = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 300 ? setShowBackToTop(true) : setShowBackToTop(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -32,7 +47,7 @@ const App = () => {
       <Gallery />
       <FindUs />
       <Footer />
-      <BackToTopBtnTo />
+      {showBackToTop && <BackToTopBtnTo />}
     </div>
   );
 };
