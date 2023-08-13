@@ -3,7 +3,6 @@ import React from "react";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Header.css";
-import Slider from "../../components/Slider/Slider";
 
 const Header = ({ isHeaderIntersecting }) => {
   return (
@@ -28,9 +27,7 @@ const Header = ({ isHeaderIntersecting }) => {
 
       <div className="app__wrapper_img animate__animated animate__fadeInRight">
         <img src={images.welcome} alt="header_img" />
-      </div> 
-      
-
+      </div>
     </div>
   );
 };
