@@ -26,6 +26,9 @@ function BackToTopBtn() {
           right: "50px",
           height: "50px",
           width: "50px",
+          border: "none",
+          borderRadius: "50%",
+          zIndex: "5",
           background: "--var(--color-black)",
           color: "--var(--color-golden)",
         }}

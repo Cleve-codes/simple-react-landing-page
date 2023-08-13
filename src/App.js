@@ -19,7 +19,6 @@ import BackToTopBtnTo from "./components/BackToTop/BackToTopBtn";
 const App = () => {
   return (
     <div>
-      <BackToTopBtnTo />
       <Navbar />
 
       <Header />
@@ -33,6 +32,7 @@ const App = () => {
       <Gallery />
       <FindUs />
       <Footer />
+      <BackToTopBtnTo />
     </div>
   );
 };
