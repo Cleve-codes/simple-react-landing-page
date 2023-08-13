@@ -14,12 +14,21 @@ const Gallery = () => {
 
   const scroll = (direction) => {
     const { current } = scrollRef;
+    const cardWidth = current.querySelector(
+      ".app__gallery-images_card"
+    ).clientWidth;
+    const scrollAmount = direction === "left" ? -cardWidth : cardWidth;
 
-    if (direction === "left") {
-      current.scrollLeft -= 300;
+    const newPosition = current.scrollLeft + scrollAmount;
+
+    if (newPosition >= current.scrollWidth) {
+      current.scrollTo({ left: 0, behavior: "smooth" });
+    } else if (newPosition < 0) {
+      current.scrollTo({ left: current.scrollWidth, behavior: "smooth" });
     } else {
-      current.scrollLeft += 300;
+      current.scrollTo({ left: newPosition, behavior: "smooth" });
     }
+    
   };
 
   return (
