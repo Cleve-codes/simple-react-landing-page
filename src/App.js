@@ -14,10 +14,12 @@ import {
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
+import BackToTopBtnTo from "./components/BackToTop/BackToTopBtn";
 
 const App = () => {
   return (
     <div>
+      <BackToTopBtnTo />
       <Navbar />
 
       <Header />
