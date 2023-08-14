@@ -1,6 +1,7 @@
 import React from "react";
 import "../../index.css";
 import { useState, useEffect } from "react";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 function BackToTopBtn() {
   const [BackToTop, setBackToTop] = useState(false);
@@ -25,21 +26,19 @@ function BackToTopBtn() {
           position: "fixed",
           bottom: "50px",
           right: "50px",
-          height: "40px",
-          width: "40px",
+          height: "37px",
+          width: "37px",
           border: "none",
           borderRadius: "50%",
           zIndex: "5",
-          background: "--var(--color-black)",
-          color: "--var(--color-golden)",
           cursor: "pointer",
           fontSize: "1.2em",
-          textAlign: "center"
+          textAlign: "center",
         }}
         onClick={() => scrollUp()}
       >
         {" "}
-        ^{" "}
+        <BsFillArrowUpCircleFill size="2rem" color="black"  />{" "}
       </button>
     </div>
   );

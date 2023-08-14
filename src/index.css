@@ -29,6 +29,12 @@ a {
   animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.scroll {
+  display: flex;
+  place-content: center;
+  padding: .5em;
+}
+
 .scroll button:hover{
   background-color: lightgrey;
 }
