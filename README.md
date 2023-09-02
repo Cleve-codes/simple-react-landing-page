@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Topics Leanrnt
 
 - Custom hooks and using 3rd party libraries
+- React state management
